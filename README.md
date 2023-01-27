@@ -2,7 +2,7 @@
 
 # Course Code : CSE-3104
 
-# Course Title : Software-Engineering-Laboratory-Spring-2023
+# Course Title : Software Engineering Laboratory
 
 # Course Teacher : M. Raihan
 # Department of Computer Science and Engineering, North Western University, Khulna, Bangladesh
