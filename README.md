@@ -1,6 +1,6 @@
 # Semester : Spring 2023
 
-# Program : Tri Semester (4 Year)
+# Program : Bi Semester (4 Year)
 
 # Course Code : CSE-3104
 
