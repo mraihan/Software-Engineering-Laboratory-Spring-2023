@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialogue Page</title>
+    <style>
+      /* Center the dialog box on the page */
+      .dialog-box {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 1px solid gray;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Style the buttons */
+      .dialog-box button {
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Style the "enter" button differently */
+      .dialog-box #enter-button {
+        background-color: #008CBA;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dialog-box">
+      <h2>Do you want to enter?</h2>
+      <button id="enter-button">Enter</button>
+      <button id="exit-button">Exit</button>
+    </div>
+    <script>
+      // Get the buttons
+      const enterButton = document.getElementById("enter-button");
+      const exitButton = document.getElementById("exit-button");
+
+      // Add event listeners to the buttons
+      enterButton.addEventListener("click", function() {
+        fetch('/process', {
+          method: 'POST'
+        });
+      });
+
+      exitButton.addEventListener("click", function() {
+        window.location.href = "https://www.google.com";
+      });
+    </script>
+  </body>
+</html>
