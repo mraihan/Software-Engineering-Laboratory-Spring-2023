@@ -53,3 +53,7 @@ const dryFruits = "Dry Fruits",
 ///
 const addtocard = "Add to Card";
 const productmatalsolike = "Product May also like : ";
+const loginsuccess = "Logged in successfully";
+const logOutsuccess = "Logged Out successfully";
+const signsuccess = "Sign up successfully ";
+
