@@ -1,4 +1,5 @@
 import 'package:farmer/consts/consts.dart';
+import 'package:farmer/controller/auth_controller.dart';
 import 'package:farmer/views/scren/signupscren.dart';
 import 'package:farmer/widest_common/applogo_wid.dart';
 import 'package:farmer/widest_common/bg_wid.dart';
@@ -10,6 +11,8 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import 'Home.dart';
+
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
 
@@ -19,6 +22,14 @@ class SignupScreen extends StatefulWidget {
 
 class _SignupScreenState extends State<SignupScreen> {
   bool? isCheck = false;
+  var controller = Get.put(AuthController());
+
+  //text controller
+  var namecontroller = TextEditingController();
+  var emailcontroller = TextEditingController();
+  var passwordcontroller = TextEditingController();
+  var passwordRetypecontroller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return bgwidget(
@@ -33,10 +44,26 @@ class _SignupScreenState extends State<SignupScreen> {
             10.heightBox,
             Column(
               children: [
-                customtextfield(hint: namehint, title: name),
-                customtextfield(hint: emailhint, title: email),
-                customtextfield(hint: passwordhint, title: password),
-                customtextfield(hint: repasswordhint, title: repassword),
+                customtextfield(
+                    hint: namehint,
+                    title: name,
+                    controller: namecontroller,
+                    isPass: false),
+                customtextfield(
+                    hint: emailhint,
+                    title: email,
+                    controller: emailcontroller,
+                    isPass: false),
+                customtextfield(
+                    hint: passwordhint,
+                    title: password,
+                    controller: passwordcontroller,
+                    isPass: true),
+                customtextfield(
+                    hint: repasswordhint,
+                    title: repassword,
+                    controller: passwordRetypecontroller,
+                    isPass: true),
 
                 Row(
                   children: [
@@ -70,10 +97,27 @@ class _SignupScreenState extends State<SignupScreen> {
                   ],
                 ),
                 5.heightBox,
-                myButton(onPress: () {})
-                    .box
-                    .width(context.screenWidth - 50)
-                    .make(),
+                myButton(onPress: () async {
+                  try {
+                    await controller
+                        .signupMethod(
+                            context: context,
+                            email: emailcontroller.text,
+                            password: passwordcontroller.text)
+                        .then((value) {
+                      return controller.storeusedata(
+                          email: emailcontroller.text,
+                          password: passwordcontroller.text,
+                          name: namecontroller.text);
+                    }).then((value) {
+                      VxToast.show(context, msg: signsuccess);
+                      Get.offAll(() => Home());
+                    });
+                  } catch (e) {
+                    auth.signOut();
+                    VxToast.show(context, msg: e.toString());
+                  }
+                }).box.width(context.screenWidth - 50).make(),
                 10.heightBox,
                 RichText(
                   text: TextSpan(
