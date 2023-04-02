@@ -1,0 +1,76 @@
+{
+    "categories":[
+        {
+            "name": "Animals Madicine",
+            "subcategory": [
+                "Birds Medicine ",
+                "Cows/goat Medicine",
+                "Others Medicine"
+            ]
+        },
+        {
+            "name":"Agricultural Machinery",
+            "subcategory":[
+                  "Tractor & Power",
+                  "Soil Cultivation",
+                  "Planting"
+            ]
+
+        },
+        {
+            "name":"Organic Fertilizer",
+            "subcategory":[
+                "Mixed Furtilizer",
+                "Home Made"
+            ]
+
+        },
+        {
+            "name":"Vegitables",
+            "subcategory":[
+                "Vegitables leaves",
+                "Fruits Vegitables"
+            ]
+
+        },
+        {
+            "name":"Plants",
+            "subcategory":[
+                "All Plants"
+            ]
+
+        },
+        {
+            "name":"Seeds",
+            "subcategory":[
+                "All Seeds"
+            ]
+
+        },
+        {
+            "name":"Rice",
+            "subcategory":[
+                "Basmati Rice",
+                " Jasmine Rice",
+                "Wild Rice",
+                "Calrose Rice",
+                "others"
+            ]
+
+        },
+        {
+            "name":"Feeds",
+            "subcategory":[
+              "All Feeds for animal" 
+            ]
+
+        },
+        {
+            "name":"Fruits",
+            "subcategory":[
+                "All seasonal Fruits "
+            ]
+
+        }
+    ]
+}
