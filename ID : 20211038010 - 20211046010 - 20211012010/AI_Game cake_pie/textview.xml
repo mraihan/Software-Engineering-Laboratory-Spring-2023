@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:orientation="horizontal"
+
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="#8818CA35"
+            android:text="Player point:"
+            android:layout_gravity="left"
+            android:layout_marginRight="200dp"
+            android:gravity="left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/tv1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="AI piont:"
+            android:id="@+id/tv2"
+            android:layout_gravity="right"
+            android:background="#882246AF"
+            android:gravity="right"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Toss"
+            android:id="@+id/tossid"
+            android:layout_marginRight="100dp"
+
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Pass"
+            android:id="@+id/t_pass"
+            android:layout_marginRight="150dp"
+
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#000000"
+            android:text="Time to win:60 sec"
+            android:id="@+id/timer"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="  Game On Play"
+        android:id="@+id/resultid"
+        android:layout_gravity="center"
+        android:background="#882246AF"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/restart"
+        android:text="Restart"
+        />
+
+
+
+
+</LinearLayout>
+
