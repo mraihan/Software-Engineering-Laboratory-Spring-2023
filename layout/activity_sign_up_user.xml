@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpUser">
+
+  <pl.droidsonroids.gif.GifImageView
+      android:id="@+id/gifImageView"
+      android:layout_width="315dp"
+      android:layout_height="79dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="76dp"
+      android:layout_marginEnd="20dp"
+      android:src="@drawable/loklagbe"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingClass,MissingConstraints" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="44dp"
+      android:text="Create your account"
+      android:textSize="23sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInoutLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="32dp"
+      app:startIconDrawable="@drawable/icon_profile"
+
+      android:hint="Email"
+      app:helperText="Required"
+      app:counterEnabled="true"
+      app:counterMaxLength="20"
+      app:endIconMode="clear_text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:maxLength="20"
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="32dp"
+      app:startIconDrawable="@drawable/lock_red"
+      android:hint="Password"
+      app:counterEnabled="true"
+      app:counterMaxLength="20"
+      app:endIconMode="password_toggle"
+      app:helperText="Required"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textInoutLayout">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:id="@+id/textInputLayout2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="32dp"
+      android:hint="Confirm Password"
+      app:counterEnabled="true"
+      app:counterMaxLength="20"
+      app:endIconMode="password_toggle"
+      app:helperText="Required"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+      app:passwordToggleTint="@color/teal_200"
+      app:startIconDrawable="@drawable/lock_red">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:maxLength="20" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="64dp"
+      android:layout_marginTop="44dp"
+      android:layout_marginEnd="64dp"
+      android:text="SIGN UP"
+      app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+      app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+      app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="@+id/button"
+      app:layout_constraintStart_toStartOf="@+id/button"
+      app:layout_constraintTop_toBottomOf="@+id/button"
+      tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        tools:layout_editor_absoluteY="0dp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
