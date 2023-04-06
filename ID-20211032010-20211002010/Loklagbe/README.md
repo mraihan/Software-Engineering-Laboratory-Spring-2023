@@ -15,22 +15,6 @@ This application is intended to provide daily utility services easily and in one
 8 Construction Worker.
 ```
 
-## Contributing
-### Emran Hosen Emon
-###### From North Western University  Khulna (CSE)
-[GitHub](https://github.com/emranhosen50) &nbsp;&nbsp; 
-[Facebook](https://www.facebook.com/emranhosen500/) &nbsp;&nbsp; 
-[Twitter](https://twitter.com/emranhosen50) &nbsp;&nbsp; 
-[Behance](https://www.behance.net/emranhosen50) &nbsp;&nbsp; 
-[Linkedin](https://www.linkedin.com/in/emranhosen50/) 
-### Shiam Ahmed Sizan
-###### From North Western University  Khulna (CSE)
-[GitHub](https://github.com/emranhosen50) &nbsp;&nbsp; 
-[Facebook](https://www.facebook.com/shiamahmed.sizan007) &nbsp;&nbsp; 
-[Twitter](https://twitter.com/emranhosen50) &nbsp;&nbsp; 
-[Behance](https://www.behance.net/emranhosen50) &nbsp;&nbsp; 
-[Linkedin](https://www.linkedin.com/in/emranhosen50/) 
-
 ## Usage
 ```gradle
 dependencies{
