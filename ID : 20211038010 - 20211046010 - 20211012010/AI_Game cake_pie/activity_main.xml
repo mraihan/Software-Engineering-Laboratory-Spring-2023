@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/img"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:orientation="horizontal"
+
+        >
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="t1"
+            android:id="@+id/t1"
+
+            />
+
+        <Button
+            android:id="@+id/t2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:backgroundTint="#E91E63"
+            android:text="t2" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="t3"
+            android:id="@+id/t3"
+
+            />
+
+        <Button
+            android:id="@+id/t4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#E91E63"
+
+            android:text="t1" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="t2"
+            android:id="@+id/t5"
+
+            />
+
+        <Button
+            android:id="@+id/t6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#E91E63"
+
+            android:text="t3" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="t1"
+            android:id="@+id/t7"
+
+            />
+
+        <Button
+            android:id="@+id/t8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#E91E63"
+
+            android:text="t2" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="t3"
+            android:id="@+id/t9"
+
+            />
+
+        <Button
+            android:id="@+id/t10"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#E91E63"
+
+            android:text="t1" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="t2"
+            android:id="@+id/t11"
+
+            />
+
+        <Button
+            android:id="@+id/t12"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#E91E63"
+
+            android:text="t12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="200dp"
+            android:background="#8818CA35"
+            android:backgroundTint="#13DC1B"
+            android:gravity="left"
+            android:text="Player1 "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:background="#882246AF"
+            android:backgroundTint="#1BC522"
+            android:gravity="right"
+
+            android:text="Player2 "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Toss"
+            android:id="@+id/tossid"
+            android:layout_marginRight="100dp"
+
+            />
+
+        <Button
+            android:id="@+id/t_pass"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="150dp"
+
+            android:text="Pass" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="#A8D86FEA"
+            android:text="Time to win:60 sec"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultid"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#882246AF"
+        android:text="  Game On Play"
+
+
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Restart" />
+
+
+</LinearLayout>
