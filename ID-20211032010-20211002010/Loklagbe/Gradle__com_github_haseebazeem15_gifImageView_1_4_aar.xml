@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.haseebazeem15:gifImageView:1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9152fb6eac3cbd96057b602b517eedc6/transformed/jetified-gifImageView-1.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9152fb6eac3cbd96057b602b517eedc6/transformed/jetified-gifImageView-1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9152fb6eac3cbd96057b602b517eedc6/transformed/jetified-gifImageView-1.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.haseebazeem15/gifImageView/1.4/7a272370f9080ba568a2a043c6361d6b67367ca7/gifImageView-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
