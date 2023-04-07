@@ -36,7 +36,33 @@ $('form#addPatient').submit( function(e){
 
 })
 
+$('form#compounder').submit( function(e){
+   var data = new FormData( $('form#compounder')[0] );
+   
+   e.preventDefault();
+   
+   $.ajax( {
+      processData: false,
+      contentType: false,
+      data: data,
+      dataType: 'json',
+      type: $( this ).attr( 'method' ),
+      url: '/prescription/api_add_compounder.php',
+      success: function( data ){
 
+         if(data.status == "success"){
+            alert("Added");
+            $('#myModal').modal('hide');
+            location.reload();
+            
+         }else{
+            alert(data.msg);
+         }
+          
+      }
+})
+
+})
 
 
 </script>

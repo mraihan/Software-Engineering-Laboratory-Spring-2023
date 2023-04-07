@@ -48,6 +48,27 @@ include_once 'inc/db.php';
                   <textarea  id="address" class="form-control" placeholder="Enter address" name="address" required=""></textarea>
             </div>
 
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Doctor:</label>
+                 <select  class="form-control"  name="doctor">
+                  <?php
+
+                  $uuid =  $_SESSION["uuid"] ;
+
+                  $doc = "SELECT *,(select `name` from user where user.id = compounder.doctor) as `name` FROM `compounder` where compounder = '$uuid'";
+                  $res = mysqli_query($con,$doc);
+                  while($r = mysqli_fetch_array($res)){
+
+                        echo '<option value="'.$r['doctor'].'">'.$r['name'].'</option>';        
+
+                   }
+                  
+                  
+                  ?>
+ 
+                 </select>
+            </div>
+
  
             <button type="submit" name="add" class="btn btn-primary">Add patient</button>
          

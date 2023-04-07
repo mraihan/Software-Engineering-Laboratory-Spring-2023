@@ -1,3 +1,12 @@
+<?php  
+ 
+
+$type = $_SESSION["type"];
+ 
+ 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +27,36 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
     <ul class="navbar-nav">
-      <li class="nav-item">
+
+
+
+      <?php 
+
+       if($type == 'Doctor'){ ?>
+             <li class="nav-item">
         <a class="nav-link" href="/prescription/">Patients</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Prescriptions</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/prescription/add_patient.php">Add patients</a>
+        <a class="nav-link" href="/prescription/compounder.php">Compounder</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">History</a>
+        <a class="nav-link" href="/prescription/edit_profile.php">Edit profile</a>
       </li>
+      <?php }else{ ?>
+
+        <li class="nav-item">
+        <a class="nav-link" href="/prescription/add_patient.php">Add patients</a>
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href="/prescription/doctor.php">Doctor</a>
+        </li>
+
+      <?php } ?>
+ 
       <li class="nav-item">
         <a class="nav-link" href="/prescription/logout.php">Logout</a>
       </li>
